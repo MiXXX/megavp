@@ -13,12 +13,13 @@
     "redux-freeze": "^0.1.5"
   },
   "devDependencies": {
+    "cross-env": "^5.0.5",
     "react-scripts": "1.0.13",
     "redux-devtools": "^3.4.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "cross-env NODE_PATH=src react-scripts start",
+    "build": "cross-env NODE_PATH=src react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
